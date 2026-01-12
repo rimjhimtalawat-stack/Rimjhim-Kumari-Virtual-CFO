@@ -7,69 +7,96 @@
 
   <style>
     body {
-      font-family: Calibri, Arial, sans-serif;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
       margin: 0;
-      background: #f4f6fb;
+      background: #f5f7fb;
       color: #1f2933;
-      line-height: 1.6;
+      line-height: 1.75;
+      font-size: 18px;
     }
 
     header {
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: #ffffff;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
 
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
     section {
-      padding: 40px 20px;
+      padding: 70px 20px;
       max-width: 1100px;
       margin: auto;
     }
 
     h2 {
       color: #0f172a;
-      margin-bottom: 12px;
+      font-size: 30px;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #1e3a8a;
     }
 
     .card {
       background: #ffffff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      margin-bottom: 25px;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+      margin-bottom: 35px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 22px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      background: #2563eb;
+      color: #ffffff;
+      padding: 16px 34px;
+      border-radius: 8px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 25px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .cta:hover {
+      background: #1e40af;
     }
 
     footer {
       background: #0f172a;
       color: #ffffff;
       text-align: center;
-      padding: 20px;
-    }
-
-    .cta {
-      background: #2563eb;
-      color: #ffffff;
-      padding: 14px 26px;
-      border-radius: 6px;
-      display: inline-block;
-      text-decoration: none;
-      margin-top: 15px;
-      font-weight: 600;
-    }
-
-    .cta:hover {
-      background: #1e40af;
+      padding: 30px;
+      font-size: 16px;
     }
 
     .sticky-bar {
@@ -77,10 +104,10 @@
       bottom: 0;
       width: 100%;
       background: #0f172a;
-      padding: 12px;
+      padding: 14px;
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 30px;
       z-index: 1000;
     }
 
@@ -88,19 +115,21 @@
       color: #ffffff;
       text-decoration: none;
       font-weight: 600;
+      font-size: 16px;
     }
 
     .whatsapp {
       position: fixed;
-      bottom: 80px;
-      right: 20px;
+      bottom: 90px;
+      right: 22px;
       background: #25D366;
       color: #ffffff;
-      padding: 14px 18px;
+      padding: 16px 22px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      font-size: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     }
   </style>
 </head>
@@ -117,11 +146,13 @@
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I work as a Virtual CFO helping growing businesses gain clarity over cash,
-      improve financial discipline, and make confident decisions without hiring a full-time CFO.
+      I provide Virtual CFO services to MSMEs and growing companies, with a focus on strengthening financial governance, cash flow discipline, and management reporting.
     </p>
     <p>
-      My focus is simple: reduce financial stress, improve visibility, and support founders with calm, structured financial guidance.
+      I work closely with finance teams to enhance transparency, identify financial and compliance risks early, and ensure reliable, decision-ready financial information.
+    </p>
+    <p>
+      My approach is structured and analytical, combining financial discipline with practical business understanding to support stable operations and informed decision-making, without the overhead of a full-time CFO.
     </p>
   </div>
 </section>
@@ -141,7 +172,7 @@
     <div class="card">
       <h3>Monthly MIS & Dashboards</h3>
       <ul>
-        <li>Founder-friendly dashboards</li>
+        <li>Founder and finance-team friendly dashboards</li>
         <li>Profit vs cash clarity</li>
         <li>Key alerts & red flags</li>
       </ul>
@@ -161,42 +192,9 @@
       <ul>
         <li>Profitability analysis</li>
         <li>Cost control frameworks</li>
-        <li>Founder decision support</li>
+        <li>Decision support for management</li>
       </ul>
     </div>
-  </div>
-</section>
-
-<section>
-  <h2>Sample Engagements</h2>
-  <div class="card">
-    <h3>Manufacturing Business – Cash Stabilisation</h3>
-    <ul>
-      <li>Identified receivables-led cash stress</li>
-      <li>Built monthly cash visibility dashboard</li>
-      <li>Improved collection discipline</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>SME – MIS & Decision Clarity</h3>
-    <ul>
-      <li>Simplified accounting data into actionable MIS</li>
-      <li>Highlighted profit vs cash mismatch</li>
-      <li>Enabled faster cost and pricing decisions</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>How I Work</h2>
-  <div class="card">
-    <ol>
-      <li>Understand the business and founder pain</li>
-      <li>Assess numbers for cash impact and reliability</li>
-      <li>Create simple dashboards and insights</li>
-      <li>Support monthly decisions and risk reduction</li>
-    </ol>
   </div>
 </section>
 
@@ -214,14 +212,12 @@
   <p>© 2026 Rimjhim Kumari | Virtual CFO</p>
 </footer>
 
-<!-- Sticky Contact Bar -->
 <div class="sticky-bar">
   <a href="mailto:Rimjhimtalawat@gmail.com">Email</a>
   <a href="tel:+919003170474">Call</a>
   <a href="https://www.linkedin.com/in/rimjhimkumarii" target="_blank">LinkedIn</a>
 </div>
 
-<!-- WhatsApp Button -->
 <a class="whatsapp" href="https://wa.me/919003170474" target="_blank">WhatsApp</a>
 
 </body>
